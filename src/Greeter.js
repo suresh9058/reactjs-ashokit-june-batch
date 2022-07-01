@@ -1,11 +1,20 @@
-function Greeter(props) {
-     console.log(props);//props -- {name: 'world', age: '31'}
+function Greeter({name, age="20", admin, date, children}) {
+    // function Greeter(props)
+    //  console.log(props);//props -- {name: 'world', age: '31'}
+
+     const myObj = {
+        name: "rakesh",
+        age:30
+     };
+    //  props.age = props.age+10;
     return (
         <>
-            <p>hello {props.name}</p>
-            <p>Age: {props.age+10}</p>
-            <p>IsAdmin: {props.isAdmin}</p>
-            <p>IsAdmin: {props.date}</p>
+            <p>hello {name}</p>
+            <p>Age: {age+10}</p>
+            <p>IsAdmin: {admin}</p>
+            <p>{myObj.name}</p>
+            {children}
+            {/* <p>IsAdmin: {props.date}</p> */}
         </>
     )
 }

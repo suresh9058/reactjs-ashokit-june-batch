@@ -5,6 +5,14 @@ import React from 'react';
 import Greeter from './Greeter';
 
 function App() {
+
+  const data = {
+    name:"fgsdgdsg",
+    age:31,
+    title: "dgsdgsdg",
+    subtitle:"dgsgfdg",
+    admin: true
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -25,9 +33,13 @@ function App() {
         <Welcome />
         <Welcome />
         <Welcome /> */}
-        <Greeter name="world" age={31} admin={false} />
-        <Greeter name="reactjs" admin/>
-        <Greeter name="world2" age="32" admin date={new Date().getDate()}/>
+        <Greeter name="reactjs" admin>
+            <span>this is the child component of Greeter component</span>
+        </Greeter>
+        {/* <Greeter name={data.name} age={data.age} admin={data.admin} /> */}
+        {/* <Greeter {...data} /> */}
+        {/* <Greeter name="reactjs" admin/> */}
+        {/* <Greeter name="world2" age="32" admin date={new Date()}/> */}
       </header>
     </div>
   );
