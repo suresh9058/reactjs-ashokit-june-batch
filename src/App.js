@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './Welcome'; 
+import React from 'react';
+import Greeter from './Greeter';
 
 function App() {
   return (
@@ -7,7 +10,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and reactjs first session
         </p>
         <a
           className="App-link"
@@ -17,6 +20,14 @@ function App() {
         >
           Learn React
         </a>
+        {/* <Welcome />
+        <Welcome />
+        <Welcome />
+        <Welcome />
+        <Welcome /> */}
+        <Greeter name="world" age={31} admin={false} />
+        <Greeter name="reactjs" admin/>
+        <Greeter name="world2" age="32" admin date={new Date().getDate()}/>
       </header>
     </div>
   );
