@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './Welcome'; 
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Greeter from './Greeter';
+import Greeting, {UserGreeting, GuestGreeting} from './Greeting';
 
 function App() {
 
@@ -33,13 +34,14 @@ function App() {
         <Welcome />
         <Welcome />
         <Welcome /> */}
-        <Greeter name="reactjs" admin>
-            <span>this is the child component of Greeter component</span>
-        </Greeter>
+        {/* <Greeter name="reactjs" admin> */}
+            {/* <span>this is the child component of Greeter component</span> */}
+        {/* </Greeter> */}
         {/* <Greeter name={data.name} age={data.age} admin={data.admin} /> */}
         {/* <Greeter {...data} /> */}
         {/* <Greeter name="reactjs" admin/> */}
         {/* <Greeter name="world2" age="32" admin date={new Date()}/> */}
+        <Greeting isLoggedIn={false}/>
       </header>
     </div>
   );
