@@ -4,6 +4,8 @@ import Welcome from './Welcome';
 import React, {useState, useEffect} from 'react';
 import Greeter from './Greeter';
 import Greeting, {UserGreeting, GuestGreeting} from './Greeting';
+import ReactEvents from './ReactEvents';
+import ListExample from './ListExample';
 
 function App() {
 
@@ -41,7 +43,9 @@ function App() {
         {/* <Greeter {...data} /> */}
         {/* <Greeter name="reactjs" admin/> */}
         {/* <Greeter name="world2" age="32" admin date={new Date()}/> */}
-        <Greeting isLoggedIn={false}/>
+        {/* <Greeting isLoggedIn={false}/> */}
+        {/* <ReactEvents /> */}
+        <ListExample numbers={[1,2,3,4,5]}/>
       </header>
     </div>
   );
