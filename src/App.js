@@ -6,6 +6,8 @@ import Greeter from './Greeter';
 import Greeting, {UserGreeting, GuestGreeting} from './Greeting';
 import ReactEvents from './ReactEvents';
 import ListExample from './ListExample';
+import ListExample2 from './ListExample2';
+import UseStateExample from './UseStateExample';
 
 function App() {
 
@@ -16,6 +18,24 @@ function App() {
     subtitle:"dgsgfdg",
     admin: true
   }
+
+  const users = [
+    // {
+    //   id:123,
+    //   name:"rakesh",
+    //   email:"rakesh@gmail.com"
+    // },
+    // {
+    //   id:124,
+    //   name:"manvith",
+    //   email:"manvith@gmail.com"
+    // },
+    // {
+    //   id:125,
+    //   name:"krishna",
+    //   email:"krishna@gmail.com"
+    // }
+  ];
   return (
     <div className="App">
       <header className="App-header">
@@ -45,7 +65,9 @@ function App() {
         {/* <Greeter name="world2" age="32" admin date={new Date()}/> */}
         {/* <Greeting isLoggedIn={false}/> */}
         {/* <ReactEvents /> */}
-        <ListExample numbers={[1,2,3,4,5]}/>
+        {/* <ListExample numbers={[1,2,3,4,5]}/> */}
+        {/* <ListExample2 users={users}/> */}
+        <UseStateExample />
       </header>
     </div>
   );
