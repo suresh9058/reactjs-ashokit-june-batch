@@ -6,11 +6,16 @@ function UseStateExample() {
 
     const handleButtonClick = ()=>{
         console.log("button clicked");
+        // count = count +1;
+        // setCount(count+1);//
+        // setCount(count+1);//
+        setCount((prevCount)=>prevCount+1);//1
+        setCount((prevCount)=>prevCount+1);//1+1
     };
 
     return (
         <>
-            <p>you clicked button this count times</p>
+            <p>you clicked button this {count} times</p>
             <button onClick={handleButtonClick}>Click Me</button>
         </>
     )

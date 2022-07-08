@@ -8,6 +8,7 @@ import ReactEvents from './ReactEvents';
 import ListExample from './ListExample';
 import ListExample2 from './ListExample2';
 import UseStateExample from './UseStateExample';
+import UseStateExample2 from './UseStateExample2';
 
 function App() {
 
@@ -67,6 +68,7 @@ function App() {
         {/* <ReactEvents /> */}
         {/* <ListExample numbers={[1,2,3,4,5]}/> */}
         {/* <ListExample2 users={users}/> */}
+        {/* <UseStateExample2/> */}
         <UseStateExample />
       </header>
     </div>
