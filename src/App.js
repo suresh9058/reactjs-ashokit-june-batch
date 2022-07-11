@@ -9,6 +9,7 @@ import ListExample from './ListExample';
 import ListExample2 from './ListExample2';
 import UseStateExample from './UseStateExample';
 import UseStateExample2 from './UseStateExample2';
+import UseEffectExample from './UseEffectExample';
 
 function App() {
 
@@ -69,7 +70,8 @@ function App() {
         {/* <ListExample numbers={[1,2,3,4,5]}/> */}
         {/* <ListExample2 users={users}/> */}
         {/* <UseStateExample2/> */}
-        <UseStateExample />
+        {/* <UseStateExample /> */}
+        <UseEffectExample />
       </header>
     </div>
   );
