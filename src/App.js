@@ -10,6 +10,7 @@ import ListExample2 from './ListExample2';
 import UseStateExample from './UseStateExample';
 import UseStateExample2 from './UseStateExample2';
 import UseEffectExample from './UseEffectExample';
+import UseEffectExample2 from './UseEffectExample2';
 
 function App() {
 
@@ -71,7 +72,8 @@ function App() {
         {/* <ListExample2 users={users}/> */}
         {/* <UseStateExample2/> */}
         {/* <UseStateExample /> */}
-        <UseEffectExample />
+        {/* <UseEffectExample /> */}
+        <UseEffectExample2 name="useEffect props"/>
       </header>
     </div>
   );
