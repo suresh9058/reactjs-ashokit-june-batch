@@ -11,6 +11,7 @@ import UseStateExample from './UseStateExample';
 import UseStateExample2 from './UseStateExample2';
 import UseEffectExample from './UseEffectExample';
 import UseEffectExample2 from './UseEffectExample2';
+import ChildParent from './ChildParent';
 
 function App() {
 
@@ -73,7 +74,9 @@ function App() {
         {/* <UseStateExample2/> */}
         {/* <UseStateExample /> */}
         {/* <UseEffectExample /> */}
-        <UseEffectExample2 name="useEffect props"/>
+        {/* <UseEffectExample2 name="useEffect props"/> */}
+        {/* <ChildParent /> */}
+        <UseEffectExample2 />
       </header>
     </div>
   );
