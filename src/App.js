@@ -12,6 +12,8 @@ import UseStateExample2 from './UseStateExample2';
 import UseEffectExample from './UseEffectExample';
 import UseEffectExample2 from './UseEffectExample2';
 import ChildParent from './ChildParent';
+import ErrorHandlingExample from './ErrorHandlingExample';
+import ReactForm from './ReactForm';
 
 function App() {
 
@@ -42,7 +44,7 @@ function App() {
   ];
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and reactjs first session
@@ -54,7 +56,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
         {/* <Welcome />
         <Welcome />
         <Welcome />
@@ -76,8 +78,10 @@ function App() {
         {/* <UseEffectExample /> */}
         {/* <UseEffectExample2 name="useEffect props"/> */}
         {/* <ChildParent /> */}
-        <UseEffectExample2 />
-      </header>
+        {/* <UseEffectExample2 /> */}
+        {/* <ErrorHandlingExample /> */}
+        <ReactForm />
+      {/* </header> */}
     </div>
   );
 }
