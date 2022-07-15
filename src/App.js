@@ -14,6 +14,7 @@ import UseEffectExample2 from './UseEffectExample2';
 import ChildParent from './ChildParent';
 import ErrorHandlingExample from './ErrorHandlingExample';
 import ReactForm from './ReactForm';
+import FormikYupExample from './FormikYupExample';
 
 function App() {
 
@@ -43,7 +44,7 @@ function App() {
     // }
   ];
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: 'black'}}>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -80,7 +81,8 @@ function App() {
         {/* <ChildParent /> */}
         {/* <UseEffectExample2 /> */}
         {/* <ErrorHandlingExample /> */}
-        <ReactForm />
+        {/* <ReactForm /> */}
+        <FormikYupExample />
       {/* </header> */}
     </div>
   );
