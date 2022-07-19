@@ -15,6 +15,11 @@ import ChildParent from './ChildParent';
 import ErrorHandlingExample from './ErrorHandlingExample';
 import ReactForm from './ReactForm';
 import FormikYupExample from './FormikYupExample';
+import StyledComponentExample from './StyledComponentExample';
+import LoginButton from './LoginButton';
+import RegisterButton from './RegisterButton';
+import ColorCard from './ColorCard';
+import ColorContainer from './ColorContainer';
 
 function App() {
 
@@ -44,7 +49,7 @@ function App() {
     // }
   ];
   return (
-    <div className="App" style={{backgroundColor: 'black'}}>
+    <div className="App">
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -82,7 +87,12 @@ function App() {
         {/* <UseEffectExample2 /> */}
         {/* <ErrorHandlingExample /> */}
         {/* <ReactForm /> */}
-        <FormikYupExample />
+        {/* <FormikYupExample /> */}
+        {/* <StyledComponentExample /> */}
+        {/* <LoginButton />
+        <RegisterButton /> */}
+        {/* <ColorCard /> */}
+        <ColorContainer />
       {/* </header> */}
     </div>
   );
