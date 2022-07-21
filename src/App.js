@@ -20,6 +20,8 @@ import LoginButton from './LoginButton';
 import RegisterButton from './RegisterButton';
 import ColorCard from './ColorCard';
 import ColorContainer from './ColorContainer';
+import ReactRouterExample from './ReactRouterExample';
+import ReactContextAPIExample from './ReactContextAPIExample';
 
 function App() {
 
@@ -92,7 +94,9 @@ function App() {
         {/* <LoginButton />
         <RegisterButton /> */}
         {/* <ColorCard /> */}
-        <ColorContainer />
+        {/* <ColorContainer /> */}
+        {/* <ReactRouterExample /> */}
+        <ReactContextAPIExample />
       {/* </header> */}
     </div>
   );
