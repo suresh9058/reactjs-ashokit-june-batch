@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './Welcome'; 
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, lazy, Suspense} from 'react';
 import Greeter from './Greeter';
 import Greeting, {UserGreeting, GuestGreeting} from './Greeting';
 import ReactEvents from './ReactEvents';
@@ -22,6 +22,10 @@ import ColorCard from './ColorCard';
 import ColorContainer from './ColorContainer';
 import ReactRouterExample from './ReactRouterExample';
 import ReactContextAPIExample from './ReactContextAPIExample';
+// import LazyLoading from './LazyLoading';
+const LazyLoading = lazy(()=>import('./LazyLoading'));
+
+const renderLoading = ()=> <div>Loading...</div>;
 
 function App() {
 
@@ -96,7 +100,10 @@ function App() {
         {/* <ColorCard /> */}
         {/* <ColorContainer /> */}
         {/* <ReactRouterExample /> */}
-        <ReactContextAPIExample />
+        {/* <ReactContextAPIExample /> */}
+        <Suspense fallback={renderLoading()}>
+          <LazyLoading />
+        </Suspense>
       {/* </header> */}
     </div>
   );
